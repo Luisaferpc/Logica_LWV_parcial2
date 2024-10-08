@@ -23,6 +23,7 @@
                 N = aleatorio.Next(1, 50);
                 if (numero > N || numero < N)
                 {
+                    centinela = false;
 
 
                     while (!centinela)
@@ -30,7 +31,7 @@
                         Console.WriteLine("SIGUE INTENTANDO");
 
 
-                        break;
+                      
                     }
                 }
                 else  {

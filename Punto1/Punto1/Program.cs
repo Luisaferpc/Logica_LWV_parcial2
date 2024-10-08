@@ -5,6 +5,7 @@
         int numero, jugadores;
         int N = 0;
         Random aleatorio = new Random();
+        
 
         Console.WriteLine("CANTIDAD DE JUGADORES: ");
         jugadores = Convert.ToInt32(Console.ReadLine());
@@ -26,16 +27,16 @@
 
                 while (numero > N || numero < N)
                 {
-                    
-                 
+     
                     Console.WriteLine("OH OH!! SIGUE INTENTANDO");
-             
-                    if (numero == N)
-                    {
-                        Console.WriteLine("HAS GANADO");
-                       
-                    }
+ 
+                }do 
+                       { if (numero == N) {
+                    Console.WriteLine("HAS GANADO");
                 }
+
+
+            
 
                 
             }
@@ -50,5 +51,4 @@
 
 
         }
-    }
 }

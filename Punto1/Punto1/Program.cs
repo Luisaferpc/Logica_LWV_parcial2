@@ -16,19 +16,28 @@
         }
         else
         {
+            Console.WriteLine("VAMOS A JUGAR! \n ADIVINA EL NÚMERO");
+            numero = Convert.ToInt32(Console.ReadLine());
 
-
-            if (jugadores > 0 || jugadores <= 2)
+            if (jugadores > 0 && jugadores <= 2)
             {
-                Console.WriteLine("VAMOS A JUGAR! \n ADIVINA EL NÚMERO");
-                numero = Convert.ToInt32(Console.ReadLine());
                 N = aleatorio.Next(1, 50);
 
-                while (numero > N) {
-                    Console.WriteLine("TE PASASTE!! SIGUE INTENTANDO");
 
-
+                while (numero > N || numero < N)
+                {
+                    
+                 
+                    Console.WriteLine("OH OH!! SIGUE INTENTANDO");
+             
+                    if (numero == N)
+                    {
+                        Console.WriteLine("HAS GANADO");
+                       
+                    }
                 }
+
+                
             }
 
 

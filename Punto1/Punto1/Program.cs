@@ -8,21 +8,38 @@
 
         Console.WriteLine("CANTIDAD DE JUGADORES: ");
         jugadores = Convert.ToInt32(Console.ReadLine());
+        if (jugadores > 4)
+        {
+            Console.Write("MAXIMO 4 JUGADORES");
 
-        if (jugadores > 0 || jugadores <= 2) {
-            Console.WriteLine("VAMOS A JUGAR! \n ADIVINA EL NÚMERO");
-            numero = Convert.ToInt32(Console.ReadLine());
-            N = aleatorio.Next(1, 50);
+
         }
-       
-
-        
-
-  
+        else
+        {
 
 
-  
+            if (jugadores > 0 || jugadores <= 2)
+            {
+                Console.WriteLine("VAMOS A JUGAR! \n ADIVINA EL NÚMERO");
+                numero = Convert.ToInt32(Console.ReadLine());
+                N = aleatorio.Next(1, 50);
+
+                while (numero > N) {
+                    Console.WriteLine("TE PASASTE!! SIGUE INTENTANDO");
 
 
+                }
+            }
+
+
+
+
+
+
+
+
+
+
+        }
     }
 }

@@ -7,6 +7,8 @@
         Random aleatorio = new Random();
         bool centinela = true;
 
+       
+
         Console.WriteLine("CANTIDAD DE JUGADORES: ");
         jugadores = Convert.ToInt32(Console.ReadLine());
         if (jugadores > 4)
@@ -21,18 +23,20 @@
                 N = aleatorio.Next(1, 50);
                 if (numero > N || numero < N)
                 {
-                    centinela = false;
-                }
-                while (!centinela) { Console.WriteLine("SIGUE INTENTANDO");
-                    
-                if (numero==N)
-                    {centinela = true;
 
-                        Console.WriteLine("HAS GANADO!");
-                      
+
+                    while (!centinela)
+                    {
+                        Console.WriteLine("SIGUE INTENTANDO");
+
+
+                        break;
                     }
-                    break;
                 }
+                else  {
+                    centinela = true;
+
+                    Console.WriteLine("HAS GANADO!"); }
 
 
 
@@ -46,10 +50,11 @@
 
 
 
+
+
+                }
 
             }
-
-        }
 
 
     }

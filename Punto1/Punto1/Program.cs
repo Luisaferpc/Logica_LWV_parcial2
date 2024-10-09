@@ -15,19 +15,41 @@ internal class Program
         Console.WriteLine("CANTIDAD DE JUGADORES: ");
         jugadores = Convert.ToInt32(Console.ReadLine());
         if (jugadores >1 && jugadores<= 4)
-        {  do {
+        { 
+             do {
                 switch (jugadores)
                 {
                     case 2: 
             
                     Console.WriteLine ("INGRESA UN NUMERO: ");
                     numero=Int32.Parse(Console.ReadLine());
-                    N=aleatorio.Next(1,50);
-                    if(numero==N){Console.WriteLine ("HAS GANADO!");} else Console.WriteLine ("ESTAS CERCA, SIGUE INTENTANDO!");
+                    N=aleatorio.Next(0,50);
+                    if(numero>N){Console.WriteLine ("MENOR");
+                    } else if (numero<N) {Console.WriteLine ("MAYOR");
+                        } else if (numero==N) {Console.WriteLine ("HAS GANADO!");   continuar=false; }  
 
                     break;
 
-                //  case 3:
+                    case 3:
+                    Console.WriteLine ("INGRESA UN NUMERO: ");
+                    numero=Int32.Parse(Console.ReadLine());
+                    N=aleatorio.Next(0,100);
+                     if(numero>N){Console.WriteLine ("MENOR");
+                    } else if (numero<N) {Console.WriteLine ("MAYOR");
+                        } else if (numero==N) {Console.WriteLine ("HAS GANADO!");   continuar=false; }  
+
+                    break;
+                    case 4:
+                    Console.WriteLine ("INGRESA UN NUMERO: ");
+                    numero=Int32.Parse(Console.ReadLine());
+                    N=aleatorio.Next(0,200);
+                   if(numero>N){Console.WriteLine ("MENOR");
+                    } else if (numero<N) {Console.WriteLine ("MAYOR");
+                        } else if (numero==N) {Console.WriteLine ("HAS GANADO!");   continuar=false; }  
+
+                    break;
+       
+
                 }
 
 

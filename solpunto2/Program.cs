@@ -44,11 +44,20 @@
             Console.WriteLine($"El estudiante {nombreEstudiante} está en la categoria SOBRESALIENTE, {promedio} ");
             break;
 
+            case double notaFinal when (notaFinal>= 3.5 && notaFinal<4.0):
+
+            Console.WriteLine($"El estudiante {nombreEstudiante} está en la categoria BUENO, {promedio} ");
+            break;
+
+             case double notaFinal when (notaFinal<3.5):
+
+            Console.WriteLine($"El estudiante {nombreEstudiante} está en la categoria BUENO, {promedio} ");
+            break;
 
             
             
         }
-            if (promedio>=3)
+            if (promedio>=3.5)
             {
                 ganadores++;
             }

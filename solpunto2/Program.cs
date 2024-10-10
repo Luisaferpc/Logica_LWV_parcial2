@@ -7,7 +7,8 @@
         bool continuar=true;
         double suma=0;
         double promedio=0;
-        
+        int ganadores=0;
+        int perdedores=0;
     
 
 
@@ -47,9 +48,24 @@
             
             
         }
-
+            if (promedio>=3)
+            {
+                ganadores++;
+            }
+            else
+            {
+                perdedores++;
+            }
         
+        Console.WriteLine("DESEA INGRESAR MAS ESTUDIANTES? (S/N) ");
+        string respuesta=Console.ReadLine().ToLower();
 
+        if (respuesta=="n")
+        {
+            continuar=false;
+            Console.WriteLine($"EN TOTAL APROBARON {ganadores} ESTUDIANTES ");
+             Console.WriteLine($"EN TOTAL REPROBARON {perdedores} ESTUDIANTES ");
+        }
 
 
         } while (continuar);

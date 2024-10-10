@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Diagnostics;
-
+﻿
 internal class Program
 {
     public static void Main(string[] args)

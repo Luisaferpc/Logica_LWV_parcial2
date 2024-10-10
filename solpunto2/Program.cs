@@ -31,7 +31,24 @@
         suma=nota1+nota2+nota3;
         promedio=suma/3;
 
-        Console.WriteLine($"El promedio del estudiante {nombreEstudiante} es {promedio} ");
+        switch (promedio)
+        { 
+            case double notaFinal when (notaFinal>=4.5):
+
+            Console.WriteLine($"El estudiante {nombreEstudiante} está en la categoria EXCELENTE, {promedio} ");
+            break;
+
+            case double notaFinal when (notaFinal>= 4.0 && notaFinal<4.5):
+
+            Console.WriteLine($"El estudiante {nombreEstudiante} está en la categoria SOBRESALIENTE, {promedio} ");
+            break;
+
+
+            
+            
+        }
+
+        
 
 
 
